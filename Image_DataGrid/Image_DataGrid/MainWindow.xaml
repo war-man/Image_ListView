@@ -10,12 +10,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Image_DataGrid"
         mc:Ignorable="d"
-        Title="ImageApp" Height="350" Width="525" Background="Wheat" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+        Title="ImageApp" Height="500" Width="525" Background="Wheat" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="300*"/>
-            <RowDefinition Height="18*"/>
+            <RowDefinition Height="250*"/>
+            <RowDefinition Height="10*"/>
         </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="350"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" Margin="10">
+                <DataGrid x:Name="xdata" HorizontalAlignment="Left" Foreground="Gray" Background="#FFE8CB96" Width="320">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Image" Width="200" Binding="{Binding Path=FirstNameItem}"/>
+                        <DataGridTextColumn Header="Price" Width="120" Binding="{Binding Path=LastNameItem}" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+            <Grid Grid.Column="1">
+                <StackPanel Margin="20">
+                    <Button x:Name="AddButton" Content="Add" Height="50" Margin="0 10 0 10" Background="#FFC7A63E" BorderBrush="#FFB49A45"/>
+                    <Button x:Name="DeleteButton" Content="Delete" Height="50" Margin="0 10 0 10" Background="#FFC7A63E" BorderBrush="#FFB49A45"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
         <Grid Grid.Row="1">
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5 0 0 0">
                 <TextBox Width="250" IsReadOnly="True" Text="Contact : https://github.com/MMovasaghi" Foreground="Black" Background="{x:Null}"/>
