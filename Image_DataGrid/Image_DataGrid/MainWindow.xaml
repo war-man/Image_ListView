@@ -17,10 +17,9 @@
             <RowDefinition Height="18*"/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="1">
-            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left">
-                <TextBox Width="250" Text="Contact : https://github.com/MMovasaghi" Foreground="Black" Background="{x:Null}"/>
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5 0 0 0">
+                <TextBox Width="250" IsReadOnly="True" Text="Contact : https://github.com/MMovasaghi" Foreground="Black" Background="{x:Null}"/>
             </StackPanel>
         </Grid>
-
     </Grid>
 </Window>
