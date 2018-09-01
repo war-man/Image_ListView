@@ -63,6 +63,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Chart\ChartData.xaml.cs">
+      <DependentUpon>ChartData.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\ImageMV.cs" />
+    <Page Include="Chart\ChartData.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -77,6 +85,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\ImageClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -105,6 +114,21 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="lightbulb.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Calculator.ico" />
+    <Resource Include="Images\Circuit.ico" />
+    <Resource Include="Images\find.ico" />
+    <Resource Include="Images\game.ico" />
+    <Resource Include="Images\Icons8-Windows-8-Science-Physics.ico" />
+    <Resource Include="Images\lightbulb.ico" />
+    <Resource Include="Images\login1.ico" />
+    <Resource Include="Images\Martin-Berube-Square-Animal-Snake.ico" />
+    <Resource Include="Images\music.ico" />
+    <Resource Include="Images\Note.ico" />
+    <Resource Include="Images\Prescription.ico" />
+    <Resource Include="Images\Science-Curriculum.ico" />
+    <Resource Include="Images\signin.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
