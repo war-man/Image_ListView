@@ -9,7 +9,7 @@
 **Framework:** WPF (.exe)
 <br />
 ## Description
-This App beta is written in C# using .NET WPF features. This version is currently developed is Visual Studio 2017 on Windows.
+This app is written in C# using .NET WPF features. This version is currently developed is Visual Studio 2017 on Windows.
 <br />
 This is a simple application can show specific image from net in the specific part that we generate it , and by click on download it can download it.
 
